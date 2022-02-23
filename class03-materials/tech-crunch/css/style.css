@@ -1,0 +1,127 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  margin-right: 20%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+* {
+  box-sizing: border-box;
+}
+body > section {
+  text-align: left;
+}
+
+section {
+  /* padding: 0 3%; */
+  float: left;
+  height: 550px;
+  width: 15%;
+  /* margin-bottom: 100px; */
+  /* border: 1px solid black; */
+}
+
+main section{
+  width: 60%;
+}
+form input{
+  width: 150px;
+  border: none;
+  text-align: left;
+}
+ul {
+  list-style: none;
+}
+a {
+  display: block;
+}
+h1 {
+  font-size: 36px;
+}
+main section span {
+  display: block;
+  margin: 10px 0;
+}
+section img {
+  width: 95%;
+}
+main section * {
+  padding: 0;
+  margin: 0;
+}
+main section + section {
+  width: 25%;
+}
+main section + section span {
+  display: block;
+  margin: 10px 0;
+}
+main section + section li{
+  border-bottom: 1px solid lightgrey;
+  margin-top: 10px;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+}
+.left *{
+  font-size: 24px;
+}
+a {
+  text-decoration: none;
+}
+main + section {
+  margin-top: 100px;
+  width: 85%;
+  margin-left: 15%;
+}
+section > h2,
+section article {
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 10px;
+}
+article section,
+article p,
+article img {
+  display: inline-block;
+  height: 200px;
+  width: 33%;
+}
+article p {
+  vertical-align: top;
+  padding: 0 50px;
+}
+article section span {
+  display: block;
+}
+article section h3 {
+  font-size: 24px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

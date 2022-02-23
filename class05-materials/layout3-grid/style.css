@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+header, footer {
+    height: 20vh;
+}
+section {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    height: 60vh;
+}

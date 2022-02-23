@@ -1,0 +1,99 @@
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body *{
+     border: 1px solid black;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, footer {
+     display: flex;
+     height: 100px;
+}
+
+ul {
+     list-style: none;
+     /* border: 2px solid red; */
+     display: flex;
+     justify-content: space-around;
+     width: 100%;
+     padding: 0;
+     border: none;
+}
+li {
+     display: inline-block;
+     border: none;
+     /* border: 2px solid red; */
+}
+
+a {
+     /* margin: 0; */
+     /* display: inline-block; */
+     border: none;
+}
+nav {
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     /* border: 2px solid red; */
+}
+
+section {
+     flex: 1;
+}
+
+.bottom > section, 
+main> section {
+     flex: 1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+main > section {
+     background-image: url('Dog-Funny-Butt-Face-Picture-For-Facebook.jpg');
+     background-size: cover;
+     background-position: center center;
+}
+
+.bottom > section {
+     background-image: url('fat-bastard.jpg');
+     background-size: cover;
+     background-position: center center;
+}
+
+main, .bottom {
+     height: 200px;
+     display: flex;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

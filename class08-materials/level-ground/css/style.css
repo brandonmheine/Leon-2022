@@ -1,0 +1,206 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* body {
+
+} */
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background: rgb(102, 118, 138);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 12rem;
+  text-align: center;
+  background: rgb(102, 118, 138);
+}
+
+main p {
+  width: 80%;
+  font-size: 1.2rem;
+}
+
+main *, .why *, .volunteer * {
+  padding: 2rem 0;
+}
+
+.why, .volunteer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 12rem;
+  text-align: center;
+}
+
+.why p, .volunteer p {
+  width: 40%;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 12rem;
+  background: rgb(219, 223, 226);
+}
+
+.middle h2 {
+  padding-top: 1.5rem;
+}
+
+.middle * {
+  padding-bottom: 1.5rem;
+}
+
+.middle section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.middle div {
+  width: 25rem;
+  height: 15rem;
+  background: rgb(102, 118, 138);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(22, 31, 42);
+  color: white;
+  padding-top: 1rem;
+}
+
+/* .container * {
+  padding: 0 0 0.4rem 0;
+} */
+
+.bottom-left, .bottom-right {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.bottom-left {
+  padding-left: 2.5rem;
+}
+
+.bottom-right {
+  padding-right: 2.5rem;
+}
+
+.bottom-left nav {
+  display: flex;
+  color: white;
+}
+
+.link-set {
+  display: flex;
+}
+
+i {
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+/* footer {
+
+} */
+
+
+/******************************************
+/* Typography
+/*******************************************/
+a {
+  text-decoration: none;
+  color: black;
+  /* border: 1px solid white; */
+}
+
+header a {
+  color: white;
+}
+
+main, main a {
+  color: white;
+}
+
+main h4 {
+  color: black;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+i {
+  color: white;
+  font-size: 2rem;
+}
+
+.container nav a {
+  padding: 0;
+  margin-right: 0.75rem;
+}
+
+.container a {
+  color: white;
+  margin: 0.25rem 1rem 1.5rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: .8rem;
+  color: rgb(79, 93, 111);
+}
+
+p {
+  line-height: 1.2rem;
+}

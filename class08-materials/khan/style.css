@@ -1,0 +1,140 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Found this to change the color of the placeholder text */
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: blue;
+    opacity: 1; /* Firefox */
+  }
+
+
+/* My code starts here: */
+
+body *{
+    box-sizing: border-box;
+}
+
+
+header {
+    height: 7vh;
+    text-align: center;
+    /* padding-bottom: 3vh; */
+    border-bottom: 1px solid black;
+    margin-bottom: 10vh;
+    font-size: 18px;
+}
+header * {
+    display: inline-block;
+    /* border: 1px solid black; */
+}
+header h2 {
+    padding: 10px 15%;
+}
+header h2 a {
+    color: black;
+    font-size: 24px;
+}
+header a {
+    text-decoration: none;
+}
+header > a {
+    padding-right: 3%;
+}
+header ul {
+    width: 25%;
+}
+header li {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+main *{
+    display: inline-block;
+}
+div {
+    width: 50%;
+    /* border: 1px solid black; */
+    text-align: right;
+    float: left;
+}
+div img {
+    max-width: 80%;
+}
+section {
+    width: 50%;
+    float: left;
+    padding-top: 10vh;
+    padding-right: 15%;
+}
+section h1 {
+    font-size: 64px;
+    margin-bottom: 3vh;
+}
+section p {
+    font-size: 18px;
+    margin-bottom: 3vh;
+    line-height: 36px;
+}
+section div {
+    width: 100%;
+    text-align: left;
+}
+button {
+    background: rgb(43,105,233);
+    height: 4vh;
+    width: 18%;
+    height: 5vh;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button a {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,46 @@
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    display: block;
+    position: relative;
+    color: #fff;
+    border: 1px solid black;
+
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    /* min-height: 0;
+    min-width: 0; */
+    /* border: 1px solid black; */
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 30px 15px 0;
+}
+
+.right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.flex {
+    margin-top: 100px;
+    height: 300px;
+    background: #ff0000;
+    color: #fff;
+
+/*  the fun stuff  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  

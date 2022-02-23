@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+header {
+    height: 20vh;
+}
+section {
+    height: 60vh;
+}
+article {
+    float: left;
+    height: 60vh;
+    width: 20%;
+}
+section section {
+    float: left;
+    width: 40%;
+}
+footer {
+    clear: both;
+    height: 20vh;
+}

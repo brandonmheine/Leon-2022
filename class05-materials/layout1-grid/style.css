@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+header, footer{
+    height: 15vh;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 30vh;
+}
+section + section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 40vh;
+}

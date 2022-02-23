@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* My code starts here: I'm going to try to use vh for vertical scaling*/
+body *{
+    box-sizing: border-box;
+}
+html {
+    height: 100vh;
+}
+
+header {
+    height: 5vh;
+    background: black;
+    color: white;
+}
+header > a,
+header ul,
+header form,
+header img,
+header nav {
+    float: left;
+    padding-top: 0.5vh;
+}
+ul li {
+    display: inline-block;
+}
+header img,
+header a {
+    min-width: 10%;
+}
+header img {
+    height: 4.5vh;
+}
+header a img {
+    margin: 0;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+header > a {
+    padding-top: 1.5vh;
+}
+header li {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+header a img {
+    padding: 0 0 0 10%;
+    height: 2.5vh;
+    margin: 0;
+}
+header nav {
+    min-width: 80%;
+}
+ul {
+    min-width: 80%;
+}
+li {
+    width: 10%;
+    border-left: 1px solid white;
+}
+li:last-child {
+    border-right: 1px solid white;
+}
+li a {
+    clear: both;
+    display: inline-block;
+    text-align: center;
+}
+header form {
+    min-width: 20%;
+}
+body section > h1,
+body section > h4 {
+    padding-top: 1vh;
+    float: left;
+    width: 50%;
+    height: 5vh;
+}
+body section > h1 {
+    padding-left: 1%;
+}
+body section > h4 {
+    text-align: right;
+    padding-right: 1%;
+}
+
+main {
+    clear: both;
+    height: 45vh;
+}
+main * {
+    /* min-width: 50%; */
+    float: left;
+}
+main section {
+    width: 50%;
+    height: 45vh;
+    padding-left: 1%;
+    padding-top: 32vh;
+}
+main section h2, 
+main section p {
+    min-width: 100%;
+    margin-bottom: 2vh;
+}
+main section + section {
+    padding: 0;
+}
+main section article {
+    width: 50%;
+    height: 22.5vh;
+    padding-left: 1%;
+    padding-top: 13vh;
+}
+main + section {
+    height: 44vh;
+}
+main + section article {
+    width: 33.3333%;
+    height: 44vh;
+    float: left;
+}
+article img {
+    height: 30vh;
+    padding-left: 10%;
+    padding-top: 1vh;
+}
+article p,
+article h3,
+article span {
+    margin-bottom: 1vh;
+}
+article h3 {
+    width: 100%;
+    padding-top: 0.5vh;
+}
+article p {
+    padding-bottom: 1vh;
+}
+

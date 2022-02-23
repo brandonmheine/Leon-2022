@@ -1,0 +1,263 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body * {
+  display: inline-block;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  background: rgb(244, 244, 244);
+}
+
+
+i {
+  font-size: 2rem;
+}
+
+header a {
+  color: black;
+}
+
+main {
+  display: flex;
+  background: rgb(244, 244, 244);
+}
+
+main img {
+  width: 50%;
+}
+
+main > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 5rem;
+  /* width: 50%; */
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  margin-left: 3rem;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 6rem;
+  width: 80%;
+}
+
+form {
+  display: inline;
+}
+
+input {
+  width: 100%;
+}
+
+.form-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 4rem 0;
+}
+
+form {
+  width: 35rem;
+  /* padding: 2rem; */
+}
+
+input {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+  /* background: orange; */
+}
+
+.icons {
+  display: flex;
+}
+
+.icons i {
+  margin-right: 2rem;
+}
+
+.about {
+  height: 100vh;
+  background-image: url('../assets/pancake.jpg');
+  background-size: cover;
+  background-position: center center;
+  /* justify-content: center; */
+  padding: 10% 10% 0 55%; 
+}
+
+.about * {
+  margin-bottom: 2rem;
+  /* border: 1px solid black; */
+}
+
+
+span {
+  color: orange;
+}
+
+.about a, .form-holder a{
+  color: white;
+  background: orange;
+  /* display: inline; */
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+.order {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(244, 244, 244);
+}
+
+.order ul {
+  border-bottom: 1px solid black;
+  padding-bottom: 1rem;
+}
+
+.breakfasts {
+  display: flex;
+  justify-content: center;
+}
+
+.breakfasts * {
+  width: 15%;
+  margin: 0 1rem;
+  border-radius: 5px;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../assets/coffee-mug.jpg');
+  background-size: cover;
+  background-position: center center;
+  /* justify-content: space-around; */
+  align-items: center;
+  /* height: 100vh; */
+  padding-top: 1rem;
+  /* border: 1px solid black; */
+}
+
+.book > * {
+  margin-bottom: 1.25rem;
+}
+
+.book img {
+  width: 50%;
+}
+
+.hours {
+  /* border: 1px solid black; */
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hours span {
+  color: black;
+  margin-top: 1.25rem;
+}
+
+.weekday, .weekend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+}
+.testimonials * {
+  margin-bottom: 1.25rem;
+}
+
+.testimonials h2 {
+  margin-bottom: 4rem;
+}
+
+.testimonials img + span {
+  font-size: 3rem;
+  color: black;
+}
+
+span + span {
+  color: black;
+}
+
+.testimonials i {
+  color: orange;
+}
+
+.testimonials p {
+  width: 50%;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.testimonials img {
+  width: 10%;
+  border-radius: 50%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

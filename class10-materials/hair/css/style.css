@@ -1,0 +1,206 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body * {
+  display: inline-block;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 5rem;
+}
+
+header i {
+  font-size: 1rem;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin: 0 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  background-image: url('../assets/rainbow.jpg');
+  background-position: center center;
+  background-size: cover;
+  padding: 5rem 55% 5rem 15%;
+
+}
+
+main * {
+  margin-bottom: 2rem;
+}
+
+main h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+main h1 + p {
+  font-size: 2rem;
+  color: white;
+}
+
+main > a {
+  padding: 1rem;
+  background: black;
+  color: white;
+}
+
+main > div {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 50%;
+  padding-left: 0.75rem;
+  padding-top: 1rem;
+}
+
+main div a {
+  background: grey;
+  color: black;
+  padding: 1rem;
+  width: 50%;
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+
+i {
+  color: black;
+  font-size: 3rem;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 20%;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+.feature * {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.feature p {
+  font-size: .75rem;
+}
+
+.feature h2 {
+  font-weight: bold;
+}
+
+.momentum {
+  display: flex;
+  padding: 2rem 15%;
+  background: rgb(225, 225, 225);
+}
+
+.momentum div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 1rem;
+}
+
+/* .momentum div * {
+  margin-bottom: 2rem;
+} */
+
+.momentum img {
+  width: 50%;
+}
+
+.momentum h2 {
+  font-size: 3rem;
+}
+
+.momentum p {
+  font-size: 0.75rem;
+}
+
+.momentum a {
+  background: black;
+  color: white;
+  padding: 1rem;
+  width: 30%;
+  text-align: center;
+}
+
+.stylists {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 11rem;
+}
+
+.stylists img{
+  width: 280px;
+  height: 400px;
+}
+
+
+.stylist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stylist a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 1rem;
+  width: 80%;
+  position: relative;
+  top: -2.5rem;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

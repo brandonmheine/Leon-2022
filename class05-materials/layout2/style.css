@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+header {
+    height: 15vh;
+}
+section {
+    height: 30vh;
+}
+section + section {
+    height: 40vh;
+}
+article {
+    float: left;
+    height: 40vh;
+    width: 40%;
+}
+article + article {
+    width: 60%;
+}
+footer {
+    clear: both;
+    height: 15vh;
+}

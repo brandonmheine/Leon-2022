@@ -1,0 +1,143 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* display: inline-block; */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+  background: rgb(245, 249, 252);
+}
+
+colors {
+  background: rgb(48, 70, 89);
+  background: rgb(245, 249, 252);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+main i {
+  color: black;
+  font-size: 25rem;
+}
+
+.company-name {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  /* border: 1px solid red; */
+}
+
+ul {
+  display: flex;
+}
+li{
+  padding: 1rem;
+}
+
+.button {
+  background: rgb(48, 70, 89);
+  color: white;
+  padding: .5rem 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 7.5rem;
+  padding-right: 20rem;
+}
+
+main div > * {
+  margin-bottom: 1.5rem;
+}
+
+main div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+form, input {
+  width: 100%;
+  height: 2rem;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 2.5rem 2rem 7.5rem;
+}
+
+.feature {
+  padding: 3rem 5rem 3rem 0;
+}
+
+.feature a {
+  font-weight: bold;
+}
+
+.feature i {
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.feature > * {
+  margin-bottom: 1rem; 
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* footer {
+
+} */
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
