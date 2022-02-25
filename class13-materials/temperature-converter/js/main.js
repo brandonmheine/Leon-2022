@@ -1,5 +1,5 @@
-//Write your pseduo code first! 
-
+var json = []
+fetch('js/elements.json').then(response => json = response.json())
 
 const celsiusTemp = document.querySelector('#cTemp');
 const submit = document.querySelector('button');
