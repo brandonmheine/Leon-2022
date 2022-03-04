@@ -30,7 +30,7 @@ function ageChecker() {
         output.textContent =  ("You can't rent fancy cars affordably");
     }
     else {
-        output.textContent =  ("Life is over")
+        output.textContent =  ("Life is over");
     }
 }
 
