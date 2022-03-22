@@ -35,7 +35,7 @@ function getIngredients(drink) {
     const filteredIngredients = ingredients.filter(a => a[0].includes('strIngredient') && a[1] !== null && a[1] !== '')
     // console.log(filteredIngredients)
     const ingredientsOnly = filteredIngredients.map(a => a[1])
-    console.log(ingredientsOnly);
+    // console.log(ingredientsOnly);
     return ingredientsOnly
 }
 
@@ -45,7 +45,7 @@ function getAmounts(drink) {
     const filteredAmounts = amounts.filter(a => a[0].includes('strMeasure') && a[1] !== null && a[1] !== '')
     // console.log(filteredAmounts);
     const amountsOnly = filteredAmounts.map(a => a[1])
-    console.log(amountsOnly);
+    // console.log(amountsOnly);
     return amountsOnly
 }
 
