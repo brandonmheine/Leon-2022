@@ -2,9 +2,9 @@
 // www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
 
 const namePlace = document.querySelector('#name')
-const instructions = document.querySelector('#instructions')
-const image = document.querySelector('img') 
-image.setAttribute('height', '200px')
+const instructionsPlace = document.querySelector('#instructions')
+const imagePlace = document.querySelector('img') 
+imagePlace.setAttribute('height', '200px')
 
 const getCocktail = async function() {
     const searchWord = document.querySelector('input').value
@@ -16,12 +16,17 @@ const getCocktail = async function() {
     const random = Math.floor(Math.random()* drinks.length)
     const drink = drinks[random]
     // console.log(firstDrink.strDrink)
-    namePlace.textContent = `Drink name: ${drink.strDrink}`
-    instructions.textContent = `Instructions: ${drink.strInstructions}`
-    image.src = drink.strDrinkThumb
+    // namePlace.textContent = `Drink name: ${drink.strDrink}`
+    // instructions.textContent = `Instructions: ${drink.strInstructions}`
+    // image.src = drink.strDrinkThumb
+    setProperties(drink.strDrink, drink.strInstructions, drink.strDrinkThumb)
 }
 
-
+function setProperties(name, instructions, image) {
+    namePlace.textContent = `Drink name: ${name}`
+    instructionsPlace.textContent = `Instructions: ${instructions}`
+    imagePlace.src = image
+}
 
 // getCocktail()
 
