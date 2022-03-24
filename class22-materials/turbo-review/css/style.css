@@ -13,11 +13,9 @@
 img{
   display: block;
   margin: 0 auto;
+  width: 25%;
 }
 
-body{
-  margin: 1rem
-}
 
 /******************************************
 /* ADDITIONAL STYLES

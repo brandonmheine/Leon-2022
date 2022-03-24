@@ -12,6 +12,7 @@ const getCocktail = async function() {
     const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchWord}`)
     const resJSON = await response.json()
     const drinks = resJSON.drinks
+    // console.log(drinks);
     const randomIndex = getRandomIndex(drinks)
     const drink = drinks[randomIndex]
     const ingredients = getIngredients(drink)
