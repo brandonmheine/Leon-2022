@@ -1,7 +1,11 @@
 // *Variables*
 // Declare a variable and assign it to your fav drink as a string. Make sure there is no whitespace on either side of the string, and print the value to the console
+const faveDrink = 'Red Wine'
+console.log(faveDrink.trim())
 
 //Declare a variable, assign it a string of multiple words, and check to see if one of the words is "apple".
+const words = 'THIS IS A STRING WITH apple in it'
+console.log(words.includes('apple'))
 
 // *Functions*
 // Create a function that returns rock, paper, or scissors as randomly as possible
