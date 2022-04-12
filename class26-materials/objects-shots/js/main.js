@@ -28,7 +28,7 @@ function setProperties(name, instructions, image) {
 }
 
 function getRandomIndex(array) {
-    return Math.floor(Math.random()* array.length)
+    return Math.floor(Math.random() * array.length)
 }
 
 function getIngredients(drink) {
