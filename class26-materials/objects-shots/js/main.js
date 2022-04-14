@@ -8,17 +8,43 @@ imagePlace.setAttribute('height', '300px')
 const ingredientAndAmountPlace = document.querySelector('#ingredients-amounts')
 
 const getCocktail = async function() {
-    const searchWord = document.querySelector('input').value
+    let searchWord = document.querySelector('input').value
+    if (searchWord.includes(' ')) {
+        searchWord = searchWord.replaceAll(' ', '_')
+        console.log(searchWord)
+    }
+    console.log(searchWord)
     const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchWord}`)
     const resJSON = await response.json()
     const drinks = resJSON.drinks
     // console.log(drinks);
+
     const randomIndex = getRandomIndex(drinks)
-    const drink = drinks[randomIndex]
+    let index = 0
+    const drink = drinks[index]
     const ingredients = getIngredients(drink)
     const amounts = getAmounts(drink)
     displayIngredientsAndAmounts(ingredients, amounts)
     setProperties(drink.strDrink, drink.strInstructions, drink.strDrinkThumb)
+
+    setInterval(() => {
+        index++
+        if (index === drinks.length) {
+            index = 0
+        }
+        const randomIndex = getRandomIndex(drinks)
+        const drink = drinks[index]
+        const ingredients = getIngredients(drink)
+        const amounts = getAmounts(drink)
+        displayIngredientsAndAmounts(ingredients, amounts)
+        setProperties(drink.strDrink, drink.strInstructions, drink.strDrinkThumb)
+    }, 5000)
+    // const randomIndex = getRandomIndex(drinks)
+    // const drink = drinks[randomIndex]
+    // const ingredients = getIngredients(drink)
+    // const amounts = getAmounts(drink)
+    // displayIngredientsAndAmounts(ingredients, amounts)
+    // setProperties(drink.strDrink, drink.strInstructions, drink.strDrinkThumb)
 }
 
 function setProperties(name, instructions, image) {
