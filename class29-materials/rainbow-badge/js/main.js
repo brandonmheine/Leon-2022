@@ -12,7 +12,6 @@ function getFetch(){
   fetch(url)
       .then(res => res.json()) // parse response as JSON
       .then(data => {
-
         pokeStore.push(data.types[0].type.name)
         pokeImg.push(data.sprites.front_shiny)
         
@@ -22,6 +21,7 @@ function getFetch(){
 
           pokeStore.push(data.types[0].type.name)
           pokeImg.push(data.sprites.front_shiny)
+          console.log(pokeStore, pokeImg)
       
           if((pokeStore[0] === "grass" && pokeStore[1] === 'water')){
             document.querySelector('#pokeImg1').src = pokeImg[0]
