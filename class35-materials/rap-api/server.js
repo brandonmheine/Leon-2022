@@ -27,14 +27,18 @@ app.get('/', (request, response) => {
 	response.sendFile(__dirname + '/index.html')
 })
 
-app.get('/api/savage', (request, response) => {
-	response.json(savage)
+app.get('/api/rappers/:rapperName', (request, response) => {
+	const rapName = request.params.rapperName.toLowerCase()
+	console.log(rapName)
+	if (!rappers[rapName]) {
+		response.json(rappers['dylan'])
+	}
+	response.json(rappers[rapName])
 })
 
 app.get('/headstails', (request, response) => {
-	const items = ['heads', 'tails']
+	const items = ['Heads', 'Tails']
 	const item = items[Math.floor(Math.random() * items.length)]
-	console.log(item)
 	response.send(item)
 })
 
